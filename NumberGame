@@ -1,0 +1,19 @@
+#NumberGame
+
+print("Welcome to Pick-A-Number")
+
+
+def main():
+    num = int(input("Please enter a number: "))
+    question = input("Are you sure? (Yes or No): ")
+
+    if question.lower() == "yes":
+        print("Your number is: ", num)
+    elif question.lower() == "no":
+        main()
+    else:
+        print("Please enter yes or no.")
+        main()
+
+
+main()
